@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-20 items-center">
           <div className="flex items-center space-x-4">
             <Link 
               to="/" 
@@ -32,15 +32,16 @@ const Navbar = () => {
               <img 
                 src="/images/logo.png" 
                 alt="logo" 
-                className="w-12 h-12 object-contain"
+                className="w-36 h-18 object-contain"
                 onError={(e) => {
+                  
                   e.target.onerror = null;
                   e.target.src = '/vite.svg';
                 }}
               />
-              <span className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">
+              {/* <span className="text-lg font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent">
                 ANOWER LOGISTICS
-              </span>
+              </span> */}
             </Link>
           </div>
 
